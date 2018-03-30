@@ -9,7 +9,7 @@ class Cetak extends CI_Controller {
     $this->load->library('Pdf');
   }
 
-  public function cetakpdf($id = NULL) {
+  public function cetakpdf() {
     $pdf = new FPDF('P','mm',array(100,100)); // ukuran kertas atau  new FPDF('P','mm','A4');  
 	$pdf->AddPage('portrait');
     $pdf->SetFont('Arial', 'B', 11);
